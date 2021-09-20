@@ -1,59 +1,101 @@
+.maincontainer {
+  height: 900px;
+  width: 100%;
+  background-image: url(/triangles-6567058_1280.png);
+  backdrop-filter: blur(20px);
+}
+
 .body-box {
-  height: 300px;
-  width: 600px;
-  border-style: solid;
-  box-shadow: 5px 10px 3px rgb(94, 135, 97);
-  background-color: rgba(21, 61, 20, 0.338);
-  border-width: 1px;
-  border-color: rgba(0, 0, 0, 0);
+  margin-left: 450px;
+  height: 100%;
+  width: 500px;
+  background-color: rgba(250, 238, 207, 0.336);
   border-radius: 20px;
-  margin-left: 100px;
   font-family: 'Righteous', cursive;
+  backdrop-filter: blur(20px);
 }
+
 #top-text {
-  font-size: 30px;
-  margin-left: 150px;
-  margin-top: 50px;
-  margin-bottom: 30px;
+  text-align: center;
+  font-size: 70px;
 }
-.top-banner form input {
-  height: 30px;
-  width: 50%;
+.body-box form input {
+  height: 40px;
+  width: 300px;
   font-family: 'Righteous', cursive;
-  background-color: rgba(255, 255, 255, 0.448);
-  margin-bottom: 40px;
-  margin-left: 150px;
+  background-color: rgba(187, 187, 187, 0.911);
+  margin-left: 90px;
+  margin-bottom: 50px;
+  text-align: center;
 }
-.top-banner form button {
-  height: 30px;
+.body-box form button {
+  height: 50px;
   width: 50%;
-  border: 1px rgb(177, 164, 147);
+  font-size: 20px;
+  border: 1px rgb(226, 179, 117);
   box-shadow: 3px 3px 7px rgb(239, 222, 200);
   border-radius: 25px;
-  margin-left: 150px;
+  margin-left: 125px;
   font-family: 'Righteous', cursive;
   background-color: antiquewhite;
 }
-.top-banner form button:hover {
+.body-box form button:hover {
   background-color: rgb(235, 196, 147);
   box-shadow: 3px 3px 7px rgb(204, 170, 130);
 }
-
 .second-box {
   height: 300px;
   width: 300px;
   border-style: solid;
-  box-shadow: 5px 10px 3px rgb(94, 135, 97);
-  background-color: rgba(21, 61, 20, 0.338);
+  box-shadow: 5px 10px 3px rgb(238, 234, 33);
+  background-color: rgb(238, 202, 48);
   border-width: 1px;
   border-color: rgba(0, 0, 0, 0);
   border-radius: 20px;
-  margin-left: 150px;
-  margin-top: 50px;
-  font-family: 'Righteous', cursive;
+  margin-left: 100px;
+  margin-top: 30px;
 }
-.cities {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.city-box .city {
+  position: relative;
+  padding: 40px 10%;
+  border-radius: 20px;
+  background: var(--text_light);
+  color: var(--text_med);
+}
+
+.city-box .city::after {
+  content: ’’;
+  width: 90%;
+  height: 50px;
+  position: absolute;
+  bottom: -12px;
+  left: 5%;
+  z-index: -1;
+  opacity: 0.3;
+  border-radius: 20px;
+  background: var(--text_light);
+}
+
+.city-box figcaption {
+  margin-top: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.city-box .city-temp {
+  font-size: 5rem;
+  font-weight: bold;
+  margin-top: 10px;
+  color: var(--text_dark);
+}
+
+.city-box .cities-name sup {
+  font-size: 0.5em;
+}
+
+.city-box .cities-name sup {
+  padding: 0.2em 0.6em;
+  border-radius: 30px;
+  color: var(--text_light);
+  background: var(--orange);
 }
