@@ -32,7 +32,7 @@ form.addEventListener('submit', (e) => {
       const cityName =
         filteredArray[0]?.querySelector('.city-name span')?.textContent
       const text = cityName
-        ? `You already know the weather for ${cityName} ...otherwise be more specific by providing the country code as well`
+        ? `You already know the weather for ${cityName}! Try a new City!`
         : ''
       msg.textContent = text
       form.reset()
